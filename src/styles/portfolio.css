@@ -352,11 +352,6 @@ body.menu-open { overflow: hidden; }
   content: ""; position: absolute; inset: 6%; border-radius: 50%;
   border: 1px solid var(--border-2);
 }
-.hero__emblem-ring {
-  position: absolute; inset: -2%; width: 104%; height: 104%;
-  animation: spin 70s linear infinite;
-  overflow: visible;
-}
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .hero__emblem-disc::after { animation: none; } }
 @media (max-height: 640px) { .hero__scroll { display: none; } }
