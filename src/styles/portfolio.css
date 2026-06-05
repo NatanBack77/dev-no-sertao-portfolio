@@ -354,7 +354,7 @@ body.menu-open { overflow: hidden; }
 }
 .hero__emblem-disc::after {
   content: ""; position: absolute; inset: -2%; border-radius: 50%;
-  border: 1px dashed var(--border-1); animation: spin 70s linear infinite;
+  border: 1px dashed rgba(var(--glow), 0.22); animation: spin 70s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .hero__emblem-disc::after { animation: none; } }
