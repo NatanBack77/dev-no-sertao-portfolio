@@ -348,6 +348,10 @@ body.menu-open { overflow: hidden; }
   position: relative; width: min(100%, 420px); aspect-ratio: 1;
   display: grid; place-items: center;
 }
+.hero__emblem-disc::before {
+  content: ""; position: absolute; inset: 6%; border-radius: 50%;
+  border: 1px solid var(--border-2);
+}
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (max-height: 640px) { .hero__scroll { display: none; } }
 .hero__emblem img { width: 78%; filter: drop-shadow(0 18px 40px rgba(0,0,0,.5)); }
