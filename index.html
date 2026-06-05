@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark" data-anim="padrao">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logo-badge.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natanael Marcelino — Dev no Sertão · Back-end &amp; DevOps</title>
+    <meta name="description" content="Natanael Marcelino — Junior Backend &amp; DevOps Engineer em Juazeiro do Norte, CE. APIs escaláveis, automação de deploys e observabilidade em produção. Node.js · TypeScript · Golang · AWS." />
+    <script>
+      (function () {
+        try {
+          var s = JSON.parse(localStorage.getItem("devnsertao-tweaks") || "{}");
+          var tema = s.tema || "escuro";
+          var paleta = s.paleta || "terracota";
+          var animacao = s.animacao || "padrao";
+          var PALETAS = {
+            terracota: { escuro: { primary: "#d8853f", hover: "#e5985a", accent: "#dcab4e", glow: "216,133,63" }, claro: { primary: "#a85d23", hover: "#8a4a1c", accent: "#a8781f", glow: "168,93,35" } },
+            ocre: { escuro: { primary: "#dcab4e", hover: "#e8bd66", accent: "#d8853f", glow: "220,171,78" }, claro: { primary: "#a8781f", hover: "#8a6116", accent: "#a85d23", glow: "168,120,31" } },
+            caatinga: { escuro: { primary: "#8a9152", hover: "#9aa162", accent: "#dcab4e", glow: "138,145,82" }, claro: { primary: "#59602c", hover: "#474d22", accent: "#a8781f", glow: "89,96,44" } },
+            brasa: { escuro: { primary: "#cf5a3a", hover: "#dc6e4e", accent: "#dcab4e", glow: "207,90,58" }, claro: { primary: "#a8401f", hover: "#8a3318", accent: "#a8781f", glow: "168,64,31" } },
+          };
+          var ANIM = {
+            sutil: { dist: "14px", dur: "520ms", marq: "52s" },
+            padrao: { dist: "26px", dur: "700ms", marq: "36s" },
+            expressivo: { dist: "46px", dur: "920ms", marq: "24s" },
+          };
+          var html = document.documentElement;
+          html.setAttribute("data-theme", tema === "claro" ? "light" : "dark");
+          html.setAttribute("data-anim", animacao);
+          var p = (PALETAS[paleta] || PALETAS.terracota)[tema === "claro" ? "claro" : "escuro"];
+          html.style.setProperty("--primary", p.primary);
+          html.style.setProperty("--primary-hover", p.hover);
+          html.style.setProperty("--accent", p.accent);
+          html.style.setProperty("--glow", p.glow);
+          html.style.setProperty("--primary-soft", "color-mix(in srgb, " + p.primary + " 16%, var(--bg-app))");
+          var a = ANIM[animacao] || ANIM.padrao;
+          html.style.setProperty("--reveal-dist", a.dist);
+          html.style.setProperty("--reveal-dur", a.dur);
+          html.style.setProperty("--marq-dur", a.marq);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
