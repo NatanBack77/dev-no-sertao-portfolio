@@ -53,6 +53,9 @@ export function Hero() {
         </div>
         <div className="hero__emblem" aria-hidden="true">
           <div className="hero__emblem-disc">
+            <svg className="hero__emblem-ring" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(216,133,63,0.22)" strokeWidth="0.6" strokeDasharray="2.5 5" strokeLinecap="round" />
+            </svg>
             <img src="/assets/logo-badge.png" alt="" />
           </div>
         </div>
