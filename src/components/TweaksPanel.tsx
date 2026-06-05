@@ -31,7 +31,7 @@ export function TweaksPanel() {
           style={{
             position: 'fixed', bottom: '5rem', right: '1.5rem', zIndex: 900,
             background: 'var(--bg-app-2)', border: '1px solid var(--border-1)',
-            borderRadius: 'var(--r-lg)', padding: '1.25rem', minWidth: '220px',
+            borderRadius: 'var(--r-lg)', padding: '1.25rem', minWidth: '220px', maxWidth: 'calc(100vw - 3rem)',
             boxShadow: '0 8px 32px rgba(0,0,0,0.4)',
           }}
         >

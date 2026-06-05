@@ -397,7 +397,11 @@ body.menu-open { overflow: hidden; }
 .about__value p { margin-top: 6px; font-size: 14px; color: var(--fg-3); }
 @media (max-width: 760px) {
   .about__grid { grid-template-columns: 1fr; }
+  .about__values { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 440px) {
   .about__values { grid-template-columns: 1fr; }
+  .about__photo-tag { left: 8px; bottom: 16px; }
 }
 
 /* -----------------------------------------------------------------------------
@@ -508,7 +512,8 @@ body.menu-open { overflow: hidden; }
 .svc__list { margin: 18px 0 0; padding: 0; list-style: none; position: relative; }
 .svc__list li { font-size: 14px; color: var(--fg-3); padding: 7px 0; border-top: 1px solid var(--border-1); display: flex; align-items: center; gap: 10px; }
 .svc__list li svg { color: var(--primary); width: 15px; height: 15px; flex-shrink: 0; }
-@media (max-width: 860px) { .svc__grid { grid-template-columns: 1fr; } }
+@media (max-width: 860px) { .svc__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .svc__grid { grid-template-columns: 1fr; } }
 
 /* -----------------------------------------------------------------------------
    15. DEPOIMENTOS
@@ -574,4 +579,53 @@ body.menu-open { overflow: hidden; }
 @keyframes rise { to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) {
   .hero h1 .ln span, .hero__eyebrow, .hero__sub, .hero__actions, .hero__stats, .hero__emblem { opacity: 1; transform: none; animation: none; }
+}
+
+/* =============================================================================
+   RESPONSIVIDADE ADICIONAL
+   ============================================================================= */
+
+/* Hero — empilha botões em telas pequenas */
+@media (max-width: 520px) {
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+  .hero__scroll { display: none; }
+  .hero__stats { gap: 20px; }
+}
+
+/* Contato — empilha ações e links */
+@media (max-width: 560px) {
+  .contact__actions { flex-direction: column; align-items: stretch; }
+  .contact__actions .btn { width: 100%; justify-content: center; white-space: normal; }
+  .contact__links { flex-direction: column; align-items: stretch; }
+  .clink { justify-content: center; }
+}
+
+/* Footer — coluna única em telas muito estreitas */
+@media (max-width: 480px) {
+  .foot__top { grid-template-columns: 1fr; }
+  .foot__brand { grid-column: auto; }
+  .foot__bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+}
+
+/* Nav — comprime marca em telas muito estreitas */
+@media (max-width: 360px) {
+  .brand__txt b { font-size: 14px; }
+  .brand__txt span { display: none; }
+  .nav__in { height: 60px; }
+  .hero { padding-top: 72px; }
+}
+
+/* Seções — padding menor em mobile */
+@media (max-width: 480px) {
+  .section { padding-block: clamp(52px, 9vw, 148px); }
+  .s-head { margin-bottom: clamp(28px, 5vw, 64px); }
+}
+
+/* Depoimentos — 2 colunas no tablet */
+@media (max-width: 860px) {
+  .quotes { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .quotes { grid-template-columns: 1fr; }
 }
