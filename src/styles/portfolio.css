@@ -370,6 +370,7 @@ body.menu-open { overflow: hidden; }
 @media (max-width: 880px) {
   .hero__in { grid-template-columns: 1fr; }
   .hero__emblem { display: none; }
+  .hero__scroll { display: none; }
 }
 
 /* -----------------------------------------------------------------------------
@@ -589,7 +590,6 @@ body.menu-open { overflow: hidden; }
 @media (max-width: 520px) {
   .hero__actions { flex-direction: column; align-items: stretch; }
   .hero__actions .btn { width: 100%; justify-content: center; }
-  .hero__scroll { display: none; }
   .hero__stats { gap: 20px; }
 }
 
