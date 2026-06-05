@@ -350,7 +350,7 @@ body.menu-open { overflow: hidden; }
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (max-height: 640px) { .hero__scroll { display: none; } }
-.hero__emblem img { width: 78%; border-radius: 50%; display: block; }
+.hero__emblem img { width: 78%; filter: drop-shadow(0 18px 40px rgba(0,0,0,.5)); }
 .hero__scroll {
   position: absolute; bottom: 28px; left: var(--gutter); z-index: 2;
   display: flex; align-items: center; gap: 10px;
