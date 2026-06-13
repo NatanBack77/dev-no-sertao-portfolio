@@ -59,6 +59,7 @@ export const projects: Project[] = [
     title: "Kubernetes + Argo Rollouts",
     description:
       "Infraestrutura de deploy progressivo em Kubernetes com Argo Rollouts, habilitando estratégias canary e blue-green para releases seguros e sem downtime.",
+    image: "/assets/kubernetes-argo-rollouts.png",
     tags: ["Kubernetes", "Argo Rollouts", "Helm", "Docker"],
   },
   {
