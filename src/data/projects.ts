@@ -1,12 +1,13 @@
 // src/data/projects.ts — 7 projetos em destaque
 export type Project = {
   no: string;
-  slotId: string;       // id do <ImageSlot> para persistir o print
+  slotId: string;       // id do <ImageSlot>
   category: string;
   title: string;
   description: string;
   tags: string[];
   featured?: boolean;   // ocupa a linha inteira no grid
+  image?: string;       // print padrão do projeto
 };
 
 export const projects: Project[] = [
@@ -19,6 +20,7 @@ export const projects: Project[] = [
       "Plataforma de contabilidade com foco em performance e escalabilidade. Implementei o padrão Cache-Aside com Redis para reduzir latência em operações críticas, além de atuar na arquitetura e no code review do back-end.",
     tags: ["NestJS", "TypeScript", "Redis", "PostgreSQL", "Docker"],
     featured: true,
+    image: "/assets/gubley-contabil.png",
   },
   {
     no: "P.02",
@@ -28,6 +30,7 @@ export const projects: Project[] = [
     description:
       "Refatoração completa do módulo de pagamentos, modernizando a base de código e garantindo maior confiabilidade nas transações financeiras.",
     tags: ["NestJS", "TypeScript", "PostgreSQL", "Docker"],
+    image: "/assets/guebly-pay.png",
   },
   {
     no: "P.03",
@@ -37,6 +40,7 @@ export const projects: Project[] = [
     description:
       "Refatoração do sistema de afiliados, reestruturando regras de negócio e integrações internas para maior manutenibilidade e consistência com os demais módulos da plataforma.",
     tags: ["NestJS", "TypeScript", "PostgreSQL"],
+    image: "/assets/guebly-affiliados.png",
   },
   {
     no: "P.04",
@@ -64,6 +68,7 @@ export const projects: Project[] = [
     description:
       "Sistema de escalas militares com algoritmo de fila circular gerenciando seis filas independentes, regras de bloqueio para adventistas, lógica de substituição/ausência e acúmulo de pontos.",
     tags: ["React", "Node.js", "Docker"],
+    image: "/assets/arranchamento-tiro.png",
   },
   {
     no: "P.07",

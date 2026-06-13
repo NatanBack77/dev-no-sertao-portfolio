@@ -26,7 +26,7 @@ export function Projects() {
               }}
             >
               <div className="pcard__media">
-                <ImageSlot id={p.slotId} shape="rect" placeholder={`Solte um print — ${p.title}`} />
+                <ImageSlot id={p.slotId} shape="rect" placeholder={`Print — ${p.title}`} defaultSrc={p.image} />
                 <span className="pcard__no">{p.no}</span>
               </div>
               <div className="pcard__body">

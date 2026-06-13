@@ -7,7 +7,7 @@ export function About() {
       <div className="wrap">
         <div className="about__grid">
           <div className="about__photo reveal">
-            <ImageSlot id="foto-perfil" shape="rounded" radius="10" placeholder="Solte sua foto aqui" style={{ width: '100%' }} />
+            <ImageSlot id="foto-perfil" shape="rounded" radius="10" placeholder="Foto" style={{ width: '100%' }} />
             <div className="about__photo-tag mono">
               <b>Natanael Marcelino</b>
               Juazeiro do Norte · CE · BR
