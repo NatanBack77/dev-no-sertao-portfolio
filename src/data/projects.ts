@@ -81,4 +81,24 @@ export const projects: Project[] = [
       "Dashboard de monitoramento industrial de máquinas em tempo real, focado em visualização de dados de produção e alertas de parada.",
     tags: ["React", "Node.js", "Docker"],
   },
+  {
+    no: "P.08",
+    slotId: "proj-cowl",
+    category: "CLI · Ferramenta de desenvolvimento",
+    title: "Cowl",
+    description:
+      "CLI multiplataforma (Windows, Linux e macOS) que monitora, compila e executa código C automaticamente, com fallback de compilador, logs coloridos e rebuild manual.",
+    tags: ["Bash", "JavaScript", "Node.js", "CLI"],
+    image: "/assets/cowl.png",
+  },
+  {
+    no: "P.09",
+    slotId: "proj-banco-horas",
+    category: "Gestão · Sistema de domínio",
+    title: "Banco de Horas",
+    description:
+      "Sistema de controle de banco de horas, com registro de entradas/saídas e cálculo automático de saldo de horas trabalhadas.",
+    tags: ["React", "Node.js", "PostgreSQL"],
+    image: "/assets/banco-de-horas.png",
+  },
 ];
