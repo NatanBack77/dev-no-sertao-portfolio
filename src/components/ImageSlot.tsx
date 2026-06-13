@@ -19,10 +19,7 @@ export function ImageSlot({ id, shape = 'rect', radius = '6', placeholder = 'Sem
       style={{
         ...style,
         borderRadius,
-        border: '2px dashed var(--border-1)',
-        background: 'var(--bg-app-2)',
         position: 'relative',
-        minHeight: '180px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
