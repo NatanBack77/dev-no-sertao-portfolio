@@ -32,7 +32,9 @@ export function Education() {
             <div className="edu">
               {education.map((ed, i) => (
                 <article className="educard reveal" key={ed.title} style={i > 0 ? { '--d': `${i * 80}ms` } as React.CSSProperties : {}}>
-                  <div className="educard__ic">{eduIconMap[ed.icon]}</div>
+                  <div className="educard__ic">
+                    {ed.logo ? <img src={ed.logo} alt="" /> : eduIconMap[ed.icon]}
+                  </div>
                   <div className="educard__body">
                     <div className="educard__date mono">
                       {ed.date} {ed.current && <span className="educard__now">Cursando</span>}

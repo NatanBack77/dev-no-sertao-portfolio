@@ -21,6 +21,7 @@ export function Footer() {
             <h5>Conecte-se</h5>
             <a href="https://github.com/NatanBack77" target="_blank" rel="noopener">GitHub</a>
             <a href="https://linkedin.com/in/natanael-marcelino-78487b291" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/devnsertao/" target="_blank" rel="noopener">Instagram</a>
             <a href="mailto:natan.devback@gmail.com">E-mail</a>
             <a href="https://wa.me/5588981994045" target="_blank" rel="noopener">WhatsApp</a>
           </div>

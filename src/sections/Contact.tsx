@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Instagram } from 'lucide-react'
 
 function GithubIcon() {
   return (
@@ -47,6 +47,9 @@ export function Contact() {
           </a>
           <a className="clink" href="https://linkedin.com/in/natanael-marcelino-78487b291" target="_blank" rel="noopener">
             <LinkedinIcon /> LinkedIn
+          </a>
+          <a className="clink" href="https://www.instagram.com/devnsertao/" target="_blank" rel="noopener">
+            <Instagram size={16} strokeWidth={1.75} /> @devnsertao
           </a>
           <a className="clink" href="#">
             <MapPin size={16} strokeWidth={1.75} /> Juazeiro do Norte · CE · Brasil

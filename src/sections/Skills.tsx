@@ -1,5 +1,6 @@
 import { Server, Database, Container, Activity } from 'lucide-react'
 import { skillGroups } from '../data/skills'
+import { BrandIcon } from '../components/BrandIcon'
 
 const iconMap: Record<string, React.ReactNode> = {
   server: <Server size={20} strokeWidth={1.75} />,
@@ -29,7 +30,16 @@ export function Skills() {
               {group.skills.map(skill => (
                 <div className="skill" key={skill.name}>
                   <div className="skill__top">
-                    <span className="nm">{skill.name}</span>
+                    <span className="nm">
+                      {skill.name}
+                      {skill.tools && skill.tools.length > 0 && (
+                        <span className="skill__logos">
+                          {skill.tools.map(tool => (
+                            <BrandIcon key={tool.name} slug={tool.slug} name={tool.name} mono={tool.mono} size="1rem" />
+                          ))}
+                        </span>
+                      )}
+                    </span>
                     <span className="lv">{skill.level}</span>
                   </div>
                   <div className="bar">

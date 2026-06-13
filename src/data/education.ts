@@ -5,6 +5,7 @@ export type Education = {
   current?: boolean;
   title: string;
   institution: string;
+  logo?: string;
 };
 
 export const education: Education[] = [
@@ -14,6 +15,7 @@ export const education: Education[] = [
     current: true,
     title: "Bacharelado em Sistemas de Informação",
     institution: "Centro Universitário Paraíso — UniFAP",
+    logo: "/assets/logo-unifap-quadrada.png",
   },
   {
     icon: "truck",
@@ -21,12 +23,14 @@ export const education: Education[] = [
     current: true,
     title: "Técnico em Logística",
     institution: "SENAI — Ceará",
+    logo: "/assets/senai-logo.png",
   },
   {
     icon: "cpu",
     date: "jan/2022 — dez/2024",
     title: "Técnico em Informática",
     institution: "EEEP Aderson Borges de Carvalho",
+    logo: "/assets/aderson-borges.jpeg",
   },
 ];
 

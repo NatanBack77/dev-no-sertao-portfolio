@@ -15,7 +15,10 @@ export function Experience() {
             <div className={`tl__item${job.current ? ' is-now' : ''} reveal`} key={i}>
               <div className="tl__date mono">{job.date}</div>
               <div className="tl__role">{job.role}</div>
-              <div className="tl__co">{job.company} <span className="sep">·</span> {job.context}</div>
+              <div className="tl__co">
+                {job.logo && <img src={job.logo} alt="" className="tl__co-logo" />}
+                {job.company} <span className="sep">·</span> {job.context}
+              </div>
               <p className="tl__desc">{job.description}</p>
               <div className="tl__tags">
                 {job.tags.map(tag => (

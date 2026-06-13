@@ -8,6 +8,10 @@ export const contact = {
     label: "LinkedIn",
     url: "https://linkedin.com/in/natanael-marcelino-78487b291",
   },
+  instagram: {
+    label: "@devnsertao",
+    url: "https://www.instagram.com/devnsertao/",
+  },
   location: "Juazeiro do Norte · CE · Brasil",
   availability:
     "Disponível para projetos, freelas e oportunidades em back-end, DevOps e infraestrutura. Costumo responder em até 24h.",

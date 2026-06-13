@@ -9,9 +9,10 @@ type Props = {
   slug: string
   name: string
   mono?: string
+  size?: string
 }
 
-export function BrandIcon({ slug, name, mono }: Props) {
+export function BrandIcon({ slug, name, mono, size = '2rem' }: Props) {
   const [hovered, setHovered] = useState(false)
   const key = 'si' + toPascal(slug) as keyof typeof si
   const icon = si[key] as { path: string; hex: string } | undefined
@@ -22,6 +23,7 @@ export function BrandIcon({ slug, name, mono }: Props) {
         className="tech__logo is-mono"
         title={name}
         aria-label={name}
+        style={{ width: size, height: size }}
       >
         {mono || name.slice(0, 2).toUpperCase()}
       </span>
@@ -33,7 +35,7 @@ export function BrandIcon({ slug, name, mono }: Props) {
       className="tech__logo"
       viewBox="0 0 24 24"
       aria-label={name}
-      style={{ color: hovered ? `#${icon.hex}` : 'var(--fg-3)', transition: 'color 200ms', width: '2rem', height: '2rem', flexShrink: 0 }}
+      style={{ color: hovered ? `#${icon.hex}` : 'var(--fg-3)', transition: 'color 200ms', width: size, height: size, flexShrink: 0 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
