@@ -49,6 +49,7 @@ export const projects: Project[] = [
     title: "Stack de Observabilidade",
     description:
       "Observabilidade completa para produção — métricas, rastreamento distribuído e dashboards. Instrumentação automática e manual via OpenTelemetry.",
+    image: "/assets/stack-observabilidade.png",
     tags: ["Grafana", "Prometheus", "OpenTelemetry", "Docker", "NestJS"],
   },
   {
